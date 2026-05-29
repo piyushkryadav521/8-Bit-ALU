@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri May 29 19:06:05 2026
+[*]
+[dumpfile] "E:\verilog_tools\8-bit ALU\alu_tb.vcd"
+[dumpfile_mtime] "Fri May 29 17:21:15 2026"
+[dumpfile_size] 1645
+[savefile] "E:\verilog_tools\8-bit ALU\GTKWaveform_8BitALU.gtkw"
+[timestart] 0
+[size] 1536 801
+[pos] -113 -113
+*-3.907605 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 118
+[sst_expanded] 1
+[sst_vpaned_height] 224
+@22
+alu8_tb.a[7:0]
+alu8_tb.b[7:0]
+@28
+alu8_tb.carry
+alu8_tb.negative
+alu8_tb.op[2:0]
+alu8_tb.overflow
+@22
+alu8_tb.result[7:0]
+@28
+alu8_tb.zero
+[pattern_trace] 1
+[pattern_trace] 0
