@@ -1,27 +1,94 @@
-# 8-Bit Arithmetic Logic Unit (ALU)
+8-Bit Arithmetic Logic Unit (ALU) Using Verilog HDL
+Project Overview
 
-A hardware-level simulation of an **8-Bit ALU**, the core execution unit of a CPU. It processes two 8-bit inputs to perform core arithmetic and bitwise logical operations.
+This project implements an 8-bit Arithmetic Logic Unit (ALU) using Verilog HDL. The ALU performs basic arithmetic and logical operations based on a 4-bit opcode input. The design was verified through simulation and waveform analysis.
 
-## 🚀 Key Features
-* **8-Bit Data Width:** Handles inputs $A$ and $B$ to yield output $Y$.
-* **Status Flags:** Real-time generation of CPU condition flags: `Z` (Zero), `C` (Carry), `V` (Overflow), and `N` (Negative).
+Objectives
+Design an 8-bit ALU using Verilog HDL.
+Implement arithmetic and logical operations.
+Verify functionality using a testbench.
+Analyze simulation waveforms.
+Gain hands-on experience in RTL design and verification.
 
-## 🛠️ Operations (3-bit Opcode)
-* `000`: **ADD** ($A + B$)
-* `001`: **SUB** ($A - B$)
-* `010`: **AND** ($A \ \& \ B$)
-* `011`: **OR** ($A \ \| \ B$)
-* `100`: **XOR** ($A \ \oplus \ B$)
-* `101`: **NOT** ($\sim A$)
-* `110`: **SHL** ($A \ll 1$)
-* `111`: **SHR** ($A \gg 1$)
+Features
 
-## 💻 Quick Start
+The ALU supports the following operations:
 
-```bash
-# 1. Clone the repo
-git clone [https://github.com/yourusername/8bit-alu.git](https://github.com/yourusername/8bit-alu.git) && cd 8bit-alu
+Opcode      	Operation
+0000	         Addition
+0001	         Subtraction
+0010          	AND
+0011	          OR
+0100	          XOR
+0101	          NOT A
+0110	         Left Shift
+0111	         Right Shift
 
-# 2. Compile & Run (Using Icarus Verilog as an example)
-iverilog -o alu_sim src/alu.v testbench/alu_tb.v
-vvp alu_sim
+Inputs and Outputs
+Inputs
+A [7:0] : First operand
+B [7:0] : Second operand
+opcode [3:0] : Operation select
+Outputs
+result [7:0] : Operation result
+carry : Carry flag
+zero : Zero flag
+
+
+RTL Design
+
+The ALU was implemented using combinational logic with a case statement inside an always block. Based on the opcode, the corresponding arithmetic or logical operation is performed.
+
+
+Verification Methodology
+
+A Verilog testbench was developed to verify all ALU operations.
+
+Test Cases:
+
+Addition
+Subtraction
+AND
+OR
+XOR
+NOT
+Left Shift
+Right Shift
+Different input combinations were applied and outputs were verified using simulation waveforms.
+
+
+Simulation Results
+
+The simulation confirmed correct operation of all implemented functions.
+
+Verified:
+Arithmetic operations
+Logical operations
+Carry generation
+Zero flag generation
+
+
+
+Learning Outcomes
+
+Through this project, I learned:
+
+Verilog HDL coding
+RTL design methodology
+Combinational logic design
+Testbench development
+Waveform analysis
+Debugging digital circuits
+
+
+Future Improvements
+Overflow flag implementation
+Sign flag implementation
+16-bit ALU version
+Multiplication and division operations
+SystemVerilog-based verification
+
+
+Author
+Piyush Kumar Yadav
+Frontend VLSI Design Enthusiast
