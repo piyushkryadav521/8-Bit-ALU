@@ -95,4 +95,4 @@ VS-Code
 
 ## Author
 Piyush Kumar Yadav
-Frontend VLSI Design Enthusiast
+(Frontend VLSI Design Enthusiast)
