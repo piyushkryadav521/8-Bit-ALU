@@ -1,17 +1,16 @@
-#8-Bit Arithmetic Logic Unit (ALU) Using Verilog HDL
+# 8-Bit Arithmetic Logic Unit (ALU) Using Verilog HDL
 Project Overview
 
 This project implements an 8-bit Arithmetic Logic Unit (ALU) using Verilog HDL. The ALU performs basic arithmetic and logical operations based on a 4-bit opcode input. The design was verified through simulation and waveform analysis.
 
-Objectives
+## Objectives
 Design an 8-bit ALU using Verilog HDL.
 Implement arithmetic and logical operations.
 Verify functionality using a testbench.
 Analyze simulation waveforms.
 Gain hands-on experience in RTL design and verification.
 
-Features
-
+## Features
 The ALU supports the following operations:
 
 Opcode      	Operation
@@ -24,7 +23,7 @@ Opcode      	Operation
 0110	         Left Shift
 0111	         Right Shift
 
-Inputs and Outputs
+## Inputs and Outputs
 Inputs
 A [7:0] : First operand
 B [7:0] : Second operand
@@ -35,12 +34,12 @@ carry : Carry flag
 zero : Zero flag
 
 
-RTL Design
+## RTL Design
 
 The ALU was implemented using combinational logic with a case statement inside an always block. Based on the opcode, the corresponding arithmetic or logical operation is performed.
 
 
-Verification Methodology
+## Verification Methodology
 
 A Verilog testbench was developed to verify all ALU operations.
 
@@ -57,7 +56,7 @@ Right Shift
 Different input combinations were applied and outputs were verified using simulation waveforms.
 
 
-Simulation Results
+## Simulation Results
 
 The simulation confirmed correct operation of all implemented functions.
 
@@ -69,7 +68,7 @@ Zero flag generation
 
 
 
-Learning Outcomes
+## Learning Outcomes
 
 Through this project, I learned:
 
@@ -81,7 +80,7 @@ Waveform analysis
 Debugging digital circuits
 
 
-Future Improvements
+## Future Improvements
 Overflow flag implementation
 Sign flag implementation
 16-bit ALU version
@@ -89,6 +88,11 @@ Multiplication and division operations
 SystemVerilog-based verification
 
 
-Author
+## Tools used
+Icarus verilog
+GTKWave
+VS-Code
+
+## Author
 Piyush Kumar Yadav
 Frontend VLSI Design Enthusiast
