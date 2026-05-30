@@ -1,4 +1,4 @@
-8-Bit Arithmetic Logic Unit (ALU) Using Verilog HDL
+#8-Bit Arithmetic Logic Unit (ALU) Using Verilog HDL
 Project Overview
 
 This project implements an 8-bit Arithmetic Logic Unit (ALU) using Verilog HDL. The ALU performs basic arithmetic and logical operations based on a 4-bit opcode input. The design was verified through simulation and waveform analysis.
